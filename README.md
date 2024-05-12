@@ -2,6 +2,12 @@
 This repository contains all the files required for establishing and communicating data transfer between Arduino UNO and ESP8266.
 
 ## Overall Working
+
+### I2C_Device_Scanner:
+
+- scans the device address of the slave device by writing to the addresses from 1 to 127 
+- Gets the address of the device if the slave device is able to write to it
+
 #### Master Working:
 Sends a passphrase "Hello" to the slave and requests the device name.
 
